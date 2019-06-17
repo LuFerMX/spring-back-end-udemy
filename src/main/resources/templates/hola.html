@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Ejercicios UDEMY</title>
+</head>
+<body>
+	<h1 style="color:red;">INICIO</h1>
+<table>
+	<thead>
+		<tr>
+			<th>NOMBRE</th>
+			<th>EDAD</th>
+		</tr>
+	</thead>
+	<tbody th:each="per : ${personas}">
+		<tr>
+			<td th:text="${per.nombre}"></td>
+			<td th:text="${per.edad}"></td>
+		</tr>
+	</tbody>
+</table>	
+</body>
+</html>
